@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 
 <body>
@@ -14,33 +17,34 @@
             World Clock 🕚
         </h1>
 
-        <select>
-            <option>Choose a city...</option>
-            <option>New York </option>
-            <option>Addis Ababa</option>
-            <option>Athens</option>
-            <option>Tokyo</option>
+        <select id="chooseCity">
+            <option value="">Choose a city...</option>
+            <option value="America/New_York">New York </option>
+            <option value="Africa/Addis_Ababa">Addis Ababa</option>
+            <option value="Europe/Athens">Athens</option>
+            <option value="Asia/Tokyo">Tokyo</option>
         </select>
-        <div class="city">
+        <div id="cities">
+            <div id="city">
+                <h2>
+                    Addis Ababa
+                </h2>
+                <div class="date"> Feburary 8th, 2024</div>
+            </div>
+            <div class="time">1:48:15 <small> AM </small></div>
             <h2>
-                Addis Ababa
+                New York
             </h2>
             <div class="date"> Feburary 8th, 2024</div>
-        </div>
-        <div class="time">1:48:15 <small> AM </small></div>
-        <h2>
-            New York
-        </h2>
-        <div class="date"> Feburary 8th, 2024</div>
 
-        <div class="time">1:48:15 <small> AM </small></div>
+            <div class="time">1:48:15 <small> AM </small></div>
+        </div>
     </div>
     <p>
         This project was coded by Eden Million and is <a
             href="https://github.com/Eden-MB/World-Clock-edenMB/tree/main/src"> open sourced on Github</a>
     </p>
     </div>
-
     <script src="index.js"></script>
 </body>
 
