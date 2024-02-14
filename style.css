@@ -34,10 +34,9 @@ h2 {
   font-size: 30px;
 }
 .city {
-  display: flex;
   position: relative;
-  padding-top: 20px;
-  top: 55px;
+  top: 35px;
+  display: inline;
   justify-content: space-between;
 }
 
@@ -52,7 +51,7 @@ h2 {
   font-weight: bold;
   position: relative;
   left: 60%;
-  bottom: 85px;
+  bottom: 70px;
 }
 
 .time small {
