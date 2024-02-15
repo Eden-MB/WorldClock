@@ -49,3 +49,6 @@ chooseCityElement.addEventListener("change", updateCity);
 
 updateTime();
 setInterval(updateTime, 1000);
+
+updateTime2();
+setInterval(updateTime, 1000);
