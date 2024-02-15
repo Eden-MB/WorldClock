@@ -36,22 +36,16 @@ function updateTime() {
     let newYorkDateElement = document.querySelector(".date2");
     let newYorkTimeElement = document.querySelector(".time2");
     let newYorkTime = moment().tz("America/New_York");
-  
+
     newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
     newYorkTimeElement.innerHTML = newYorkTime.format(
       "h:mm:ss [<small>]A[<small>]"
     );
   }
-  }
-
-
-function updateTime2() {
+}
 
 let chooseCityElement = document.querySelector("#chooseCity");
 chooseCityElement.addEventListener("change", updateCity);
 
 updateTime();
-setInterval(updateTime, 1000);
-
-updateTime2();
 setInterval(updateTime, 1000);
